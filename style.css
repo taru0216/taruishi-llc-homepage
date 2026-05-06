@@ -372,6 +372,10 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.005em;
   margin: 0 0 4rem;
   max-width: 22ch;
+  /* 日本語見出しの折り返しを綺麗に整える（句読点を行頭に残さない・行幅を均等化） */
+  text-wrap: balance;
+  line-break: strict;
+  overflow-wrap: anywhere;
 }
 .accent { color: var(--accent); }
 
